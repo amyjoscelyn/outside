@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "AMYForecastAPIClient.h"
 
 @interface ViewController ()
 
@@ -14,11 +15,16 @@
 
 @implementation ViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
     [super viewDidLoad];
     
     NSString *latitude = @"40.7787902";
     NSString *longitude = @"-73.90658830000001";
+    
+    [AMYForecastAPIClient getForecastForLatitude:latitude longitude:longitude completion:^(NSArray *dailyForecastModels) {
+        NSLog(@"models: %@", dailyForecastModels);
+    }];
 }
 
 - (void)didReceiveMemoryWarning {
