@@ -34,16 +34,9 @@
          AMYCurrentForecast *today = dailyForecastModels[0];
          
          NSLog(@"%@: %.2f/%.2f, it's currently %@ (%@)", today.date, today.temperature, today.apparentTemperature, today.weatherSummary, today.weatherIcon);
-         
-         /*
-         for (AMYDailyForecast *day in dailyForecastModels)
-         {
-             CGFloat maxTemp = day.temperatureMax;
-             CGFloat minTemp = day.temperatureMin;
-             NSString *dayDate = [format stringFromDate:day.date];
-             NSLog(@"%@: %.2f, %.2f", dayDate, maxTemp, minTemp);
-         } */
+         self.currentTempLabel.text = [NSString stringWithFormat:@"%.2f°F", today.apparentTemperature];
     }];
+    
 }
 
 @end
