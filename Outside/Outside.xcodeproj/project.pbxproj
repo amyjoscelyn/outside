@@ -17,6 +17,7 @@
 		3D9D60CB1C739DD5007EB807 /* OutsideUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D60CA1C739DD5007EB807 /* OutsideUITests.m */; };
 		3D9D60DA1C73A00A007EB807 /* AMYForecastAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D60D91C73A009007EB807 /* AMYForecastAPIClient.m */; };
 		3D9D60DD1C73A201007EB807 /* AMYDailyForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D60DC1C73A201007EB807 /* AMYDailyForecast.m */; };
+		3D9D60E01C73B9C0007EB807 /* AMYCurrentForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D60DF1C73B9C0007EB807 /* AMYCurrentForecast.m */; };
 		71590E447D3E845BA0CCBF45 /* libPods-Outside.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDEBD2E2FA8681B1C897AB8 /* libPods-Outside.a */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,8 @@
 		3D9D60D91C73A009007EB807 /* AMYForecastAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMYForecastAPIClient.m; sourceTree = "<group>"; };
 		3D9D60DB1C73A201007EB807 /* AMYDailyForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMYDailyForecast.h; sourceTree = "<group>"; };
 		3D9D60DC1C73A201007EB807 /* AMYDailyForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMYDailyForecast.m; sourceTree = "<group>"; };
+		3D9D60DE1C73B9C0007EB807 /* AMYCurrentForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMYCurrentForecast.h; sourceTree = "<group>"; };
+		3D9D60DF1C73B9C0007EB807 /* AMYCurrentForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMYCurrentForecast.m; sourceTree = "<group>"; };
 		9DDEBD2E2FA8681B1C897AB8 /* libPods-Outside.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Outside.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3B85BB24EC12E867015D5F7 /* Pods-Outside.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Outside.release.xcconfig"; path = "Pods/Target Support Files/Pods-Outside/Pods-Outside.release.xcconfig"; sourceTree = "<group>"; };
 		E941EF7B054E79E973B4D338 /* Pods-Outside.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Outside.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Outside/Pods-Outside.debug.xcconfig"; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 				3D9D60A91C739DD5007EB807 /* AppDelegate.m */,
 				3D9D60D81C73A009007EB807 /* AMYForecastAPIClient.h */,
 				3D9D60D91C73A009007EB807 /* AMYForecastAPIClient.m */,
+				3D9D60DE1C73B9C0007EB807 /* AMYCurrentForecast.h */,
+				3D9D60DF1C73B9C0007EB807 /* AMYCurrentForecast.m */,
 				3D9D60DB1C73A201007EB807 /* AMYDailyForecast.h */,
 				3D9D60DC1C73A201007EB807 /* AMYDailyForecast.m */,
 				3D9D60AE1C739DD5007EB807 /* Main.storyboard */,
@@ -355,6 +360,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9D60E01C73B9C0007EB807 /* AMYCurrentForecast.m in Sources */,
 				3D9D60DA1C73A00A007EB807 /* AMYForecastAPIClient.m in Sources */,
 				3D9D60AD1C739DD5007EB807 /* ViewController.m in Sources */,
 				3D9D60AA1C739DD5007EB807 /* AppDelegate.m in Sources */,

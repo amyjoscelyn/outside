@@ -14,6 +14,6 @@
 @property (nonatomic, assign) float temperatureMax;
 @property (nonatomic, assign) float temperatureMin;
 
--(instancetype)initWithDictionary:(NSDictionary *)dictionary;
+- (instancetype)initWithDictionary:(NSDictionary *)dictionary;
 
 @end
