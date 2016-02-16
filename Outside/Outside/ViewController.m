@@ -16,7 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSString *latitude = @"40.7787902";
+    NSString *longitude = @"-73.90658830000001";
 }
 
 - (void)didReceiveMemoryWarning {

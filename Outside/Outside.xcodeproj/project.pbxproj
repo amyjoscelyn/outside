@@ -15,6 +15,9 @@
 		3D9D60B51C739DD5007EB807 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9D60B31C739DD5007EB807 /* LaunchScreen.storyboard */; };
 		3D9D60C01C739DD5007EB807 /* OutsideTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D60BF1C739DD5007EB807 /* OutsideTests.m */; };
 		3D9D60CB1C739DD5007EB807 /* OutsideUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D60CA1C739DD5007EB807 /* OutsideUITests.m */; };
+		3D9D60DA1C73A00A007EB807 /* AMYForecastAPIClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D60D91C73A009007EB807 /* AMYForecastAPIClient.m */; };
+		3D9D60DD1C73A201007EB807 /* AMYDailyForecast.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D9D60DC1C73A201007EB807 /* AMYDailyForecast.m */; };
+		71590E447D3E845BA0CCBF45 /* libPods-Outside.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDEBD2E2FA8681B1C897AB8 /* libPods-Outside.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,13 @@
 		3D9D60C61C739DD5007EB807 /* OutsideUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OutsideUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9D60CA1C739DD5007EB807 /* OutsideUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OutsideUITests.m; sourceTree = "<group>"; };
 		3D9D60CC1C739DD5007EB807 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D9D60D81C73A009007EB807 /* AMYForecastAPIClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMYForecastAPIClient.h; sourceTree = "<group>"; };
+		3D9D60D91C73A009007EB807 /* AMYForecastAPIClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMYForecastAPIClient.m; sourceTree = "<group>"; };
+		3D9D60DB1C73A201007EB807 /* AMYDailyForecast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMYDailyForecast.h; sourceTree = "<group>"; };
+		3D9D60DC1C73A201007EB807 /* AMYDailyForecast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMYDailyForecast.m; sourceTree = "<group>"; };
+		9DDEBD2E2FA8681B1C897AB8 /* libPods-Outside.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Outside.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3B85BB24EC12E867015D5F7 /* Pods-Outside.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Outside.release.xcconfig"; path = "Pods/Target Support Files/Pods-Outside/Pods-Outside.release.xcconfig"; sourceTree = "<group>"; };
+		E941EF7B054E79E973B4D338 /* Pods-Outside.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Outside.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Outside/Pods-Outside.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71590E447D3E845BA0CCBF45 /* libPods-Outside.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +96,8 @@
 				3D9D60BE1C739DD5007EB807 /* OutsideTests */,
 				3D9D60C91C739DD5007EB807 /* OutsideUITests */,
 				3D9D60A31C739DD5007EB807 /* Products */,
+				E7F7F35CE0436CC82F434BB0 /* Pods */,
+				513CC63F5036E68EF6978623 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +116,13 @@
 			children = (
 				3D9D60A81C739DD5007EB807 /* AppDelegate.h */,
 				3D9D60A91C739DD5007EB807 /* AppDelegate.m */,
+				3D9D60D81C73A009007EB807 /* AMYForecastAPIClient.h */,
+				3D9D60D91C73A009007EB807 /* AMYForecastAPIClient.m */,
+				3D9D60DB1C73A201007EB807 /* AMYDailyForecast.h */,
+				3D9D60DC1C73A201007EB807 /* AMYDailyForecast.m */,
+				3D9D60AE1C739DD5007EB807 /* Main.storyboard */,
 				3D9D60AB1C739DD5007EB807 /* ViewController.h */,
 				3D9D60AC1C739DD5007EB807 /* ViewController.m */,
-				3D9D60AE1C739DD5007EB807 /* Main.storyboard */,
 				3D9D60B11C739DD5007EB807 /* Assets.xcassets */,
 				3D9D60B31C739DD5007EB807 /* LaunchScreen.storyboard */,
 				3D9D60B61C739DD5007EB807 /* Info.plist */,
@@ -140,6 +157,23 @@
 			path = OutsideUITests;
 			sourceTree = "<group>";
 		};
+		513CC63F5036E68EF6978623 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9DDEBD2E2FA8681B1C897AB8 /* libPods-Outside.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7F7F35CE0436CC82F434BB0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E941EF7B054E79E973B4D338 /* Pods-Outside.debug.xcconfig */,
+				A3B85BB24EC12E867015D5F7 /* Pods-Outside.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3D9D60CF1C739DD5007EB807 /* Build configuration list for PBXNativeTarget "Outside" */;
 			buildPhases = (
+				52106AE8CAEB77B262428E3F /* Check Pods Manifest.lock */,
 				3D9D609E1C739DD5007EB807 /* Sources */,
 				3D9D609F1C739DD5007EB807 /* Frameworks */,
 				3D9D60A01C739DD5007EB807 /* Resources */,
+				82C41B6890D1EE758ED03016 /* Embed Pods Frameworks */,
+				B092F2D78C81BF3E6AA31E80 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,14 +302,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		52106AE8CAEB77B262428E3F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		82C41B6890D1EE758ED03016 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Outside/Pods-Outside-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B092F2D78C81BF3E6AA31E80 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Outside/Pods-Outside-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3D9D609E1C739DD5007EB807 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D9D60DA1C73A00A007EB807 /* AMYForecastAPIClient.m in Sources */,
 				3D9D60AD1C739DD5007EB807 /* ViewController.m in Sources */,
 				3D9D60AA1C739DD5007EB807 /* AppDelegate.m in Sources */,
 				3D9D60A71C739DD5007EB807 /* main.m in Sources */,
+				3D9D60DD1C73A201007EB807 /* AMYDailyForecast.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +498,7 @@
 		};
 		3D9D60D01C739DD5007EB807 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E941EF7B054E79E973B4D338 /* Pods-Outside.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Outside/Info.plist;
@@ -422,6 +510,7 @@
 		};
 		3D9D60D11C739DD5007EB807 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3B85BB24EC12E867015D5F7 /* Pods-Outside.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Outside/Info.plist;
@@ -498,6 +587,7 @@
 				3D9D60D11C739DD5007EB807 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D9D60D21C739DD5007EB807 /* Build configuration list for PBXNativeTarget "OutsideTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +596,7 @@
 				3D9D60D41C739DD5007EB807 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3D9D60D51C739DD5007EB807 /* Build configuration list for PBXNativeTarget "OutsideUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +605,7 @@
 				3D9D60D71C739DD5007EB807 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
