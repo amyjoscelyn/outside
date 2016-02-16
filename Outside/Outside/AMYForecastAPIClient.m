@@ -38,24 +38,6 @@
         NSLog(@"ERROR: %@", error.localizedDescription);
     }];
     
-    //This downloads a file.
-//    NSURL *url = [NSURL URLWithString:urlString];
-//    
-//    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
-//    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
-// 
-//    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-//    
-//    NSURLSessionDownloadTask *downloadTask = [manager downloadTaskWithRequest:request progress:nil destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
-//        
-//        NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
-//        return [documentsDirectoryURL URLByAppendingPathComponent:[response suggestedFilename]];
-//        
-//    } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
-//        
-//        NSLog(@"File downloaded to: %@", filePath);
-//    }];
-//    [downloadTask resume];
 }
 
 @end
