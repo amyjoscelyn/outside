@@ -25,16 +25,16 @@
     [manager GET:urlString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         // this should get the current weather information
-        NSArray *currentDictionary = responseObject[@"currently"];
+        NSDictionary *currentDictionary = responseObject[@"currently"];
         NSLog(@"currentDictionary: %@", currentDictionary);
         
         NSMutableArray *models = [NSMutableArray array];
         
-        NSString *date = [currentDictionary valueForKey:@"time"];
-        NSString *temp = [currentDictionary valueForKey:@"temperature"];
-        NSString *apparentTemp = [currentDictionary valueForKey:@"apparentTemperature"];
-        NSString *icon = [currentDictionary valueForKey:@"icon"];
-        NSString *summary = [currentDictionary valueForKey:@"summary"];
+        NSString *date = currentDictionary[@"time"];
+        NSString *temp = currentDictionary[@"temperature"];
+        NSString *apparentTemp = currentDictionary[@"apparentTemperature"];
+        NSString *icon = currentDictionary[@"icon"];
+        NSString *summary = currentDictionary[@"summary"];
         
         AMYCurrentForecast *model = [[AMYCurrentForecast alloc] initWithDate:date summary:summary icon:icon temperature:temp apparentTemperature:apparentTemp];
         
