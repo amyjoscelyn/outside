@@ -24,7 +24,7 @@
     
     [manager GET:urlString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        // this should get the current weather information
+        // this gets the current weather information
         NSDictionary *currentDictionary = responseObject[@"currently"];
         NSLog(@"currentDictionary: %@", currentDictionary);
         
@@ -39,14 +39,7 @@
         AMYCurrentForecast *model = [[AMYCurrentForecast alloc] initWithDate:date summary:summary icon:icon temperature:temp apparentTemperature:apparentTemp];
         
         [models addObject:model];
-        
-//        for (NSDictionary *dictionary in currentDictionary)
-//        {
-//            NSLog(@"dictionary: %@", dictionary);
-//            
-//            AMYCurrentForecast *model = [[AMYCurrentForecast alloc] initWithDictionary:dictionary];
-//            [models addObject:model];
-//        }
+
         completion(models);
         
         /* This gets the information for the daily data.
