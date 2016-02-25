@@ -15,7 +15,7 @@
 
 + (void)getForecastForLatitude:(NSString *)latitude longitude:(NSString *)longitude completion:(void (^)(NSArray *))completion
 {
-    NSLog(@"we're inside the getForecast method");
+//    NSLog(@"we're inside the getForecast method");
     NSString *apiKey = @"8b870816198b0390d0f82df8eb0afb73";
     
     NSString *urlString = [NSString stringWithFormat:@"https://api.forecast.io/forecast/%@/%@,%@", apiKey, latitude, longitude];
