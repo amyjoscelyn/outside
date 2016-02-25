@@ -29,15 +29,26 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aye-LE-5m2">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="160"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="aye-LE-5m2" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0to-Ua-9YQ"/>
+                            <constraint firstItem="aye-LE-5m2" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Bt2-Q8-Zfk"/>
+                            <constraint firstItem="aye-LE-5m2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C43-4L-kOD"/>
+                            <constraint firstItem="aye-LE-5m2" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="Raf-Aa-Ayl"/>
                             <constraint firstAttribute="trailingMargin" secondItem="is0-EB-Vse" secondAttribute="trailing" constant="29" id="d5j-LC-qZi"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="is0-EB-Vse" secondAttribute="bottom" constant="43" id="raC-Ek-efP"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="currentTempLabel" destination="is0-EB-Vse" id="EO5-sy-tCE"/>
+                        <outlet property="iconLabel" destination="aye-LE-5m2" id="ER3-tq-jLZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
