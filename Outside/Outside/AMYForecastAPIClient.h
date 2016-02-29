@@ -12,6 +12,4 @@
 
 + (void)getForecastForLatitude:(NSString *)latitude longitude:(NSString *)longitude completion:(void (^)(NSArray *dailyForecastModels))completion;
 
-- (void)startStandardUpdates;
-
 @end

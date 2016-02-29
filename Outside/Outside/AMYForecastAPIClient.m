@@ -7,18 +7,14 @@
 //
 
 #import <AFNetworking.h>
-#import <CoreLocation/CoreLocation.h>
 #import "AMYForecastAPIClient.h"
 #import "AMYCurrentForecast.h"
 #import "AMYDailyForecast.h"
 
-@interface AMYForecastAPIClient () <CLLocationManagerDelegate>
+@interface AMYForecastAPIClient ()
 
-@property (nonatomic, strong) CLLocationManager *locationManager;
 @property (nonatomic, strong) NSString *latitude;
 @property (nonatomic, strong) NSString *longitude;
-
-@property (nonatomic, strong) id<CLLocationManagerDelegate> delegate;
 
 @end
 
@@ -72,43 +68,6 @@
         NSLog(@"ERROR: %@", error.localizedDescription);
     }];
     
-}
-
-- (void)startStandardUpdates
-{
-    // Create the location manager if this object does not
-    // already have one.
-    if (nil == self.locationManager)
-    {
-        self.locationManager = [[CLLocationManager alloc] init];
-    }
-    self.locationManager.delegate = self;
-    self.locationManager.desiredAccuracy = kCLLocationAccuracyKilometer;
-    
-    // Set a movement threshold for new events.
-    self.locationManager.distanceFilter = 500; // meters
-    
-    [self.locationManager startUpdatingLocation];
-}
-
-- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations
-{
-    [self.locationManager stopUpdatingLocation];
-    
-    CLLocation *location = locations.lastObject;
-    
-    NSDate *eventDate = location.timestamp;
-    
-    NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
-    
-    if (fabs(howRecent) < 15.0)
-    {
-        NSLog(@"latitude %+.6f, longitude %+.6f\n",
-              location.coordinate.latitude,
-              location.coordinate.longitude);
-        self.latitude = [NSString stringWithFormat:@"%f", location.coordinate.latitude];
-        self.longitude = [NSString stringWithFormat:@"%f", location.coordinate.longitude];
-    }
 }
 
 @end
