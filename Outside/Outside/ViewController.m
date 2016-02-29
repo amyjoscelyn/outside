@@ -6,6 +6,7 @@
 //  Copyright © 2016 Amy Joscelyn. All rights reserved.
 //
 
+#import <CoreLocation/CoreLocation.h>
 #import "ViewController.h"
 #import "AMYForecastAPIClient.h"
 #import "AMYCurrentForecast.h"
@@ -17,6 +18,8 @@
 
 @property (weak, nonatomic) IBOutlet UILabel *currentTempLabel;
 @property (weak, nonatomic) IBOutlet UILabel *iconLabel;
+
+@property (strong, nonatomic) CLLocationManager *locationManager;
 
 @end
 
@@ -98,7 +101,7 @@
          /*
           clear day / sunny = 0
           slightly cloudy = 1
-          mixed cloud and sun = 2
+          Partly Cloudy (partly cloudy day) = 2
           mostly cloudy = 3
           Overcast (summary) = 4
           sunshowers = 5
@@ -121,6 +124,10 @@
          else if ([today.weatherIcon isEqualToString:@"rain"])
          {
              self.iconLabel.text = weatherIcons[6];
+         }
+         else if ([today.weatherSummary isEqualToString:@"Partly Cloudy"])
+         {
+             self.iconLabel.text = weatherIcons[2];
          }
          else
          {
